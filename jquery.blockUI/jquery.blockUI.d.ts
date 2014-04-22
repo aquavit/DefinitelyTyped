@@ -16,11 +16,12 @@ interface UnblockUI {
 }
 interface JQuery {
     blockUI: BlockUI;
-    unblockUI : UnblockUI;
+    unblockUI: UnblockUI;
+    block: BlockUI;
+    unblock: UnblockUI;
 }
 
 interface JQueryStatic {
     blockUI: BlockUI;
     unblockUI: UnblockUI;
 }
-
