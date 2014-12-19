@@ -10,17 +10,32 @@ interface BlockUI {
     (opts?: any): void;
     defaults: any;
 }
+
+interface Block {
+    (opts?: any): void;
+    defaults: any;
+}
+
 interface UnblockUI {
     (opts?: any): void;
     defaults: any;
 }
+
+interface Unblock {
+    (opts?: any): void;
+    defaults: any;
+}
+
 interface JQuery {
     blockUI: BlockUI;
-    unblockUI : UnblockUI;
+    unblockUI: UnblockUI;
+    block: Block;
+    unblock: Unblock;
 }
 
 interface JQueryStatic {
     blockUI: BlockUI;
     unblockUI: UnblockUI;
+    block: Block;
+    unblock: Unblock;
 }
-
